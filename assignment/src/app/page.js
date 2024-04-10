@@ -144,7 +144,7 @@ export default function Home() {
         </div>
       </div>
       <div className="col-span-4 px-10">
-        <div className="text-3xl font-bold mt-4 max-w-72 text-white ">
+        <div className="text-3xl font-bold mt-4 max-w-72 text-white-100 ">
           {activeButton === 1 ? (
             <h1>Explore Your first Event</h1>
           ) : (
