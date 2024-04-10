@@ -1,0 +1,10 @@
+export {default as guitar} from "./guitar.jpg";
+export {default as musician} from "./musician.jpg";
+export {default as qrcode} from "./qrCode.jpg"
+export {default as music} from "./rock.jpg";
+export {default as  drum} from "./drumkit.jpg";
+export {default as  jukebox} from "./jukebox.jpg";
+export {default as artist} from "./artist1.png"
+export {default as astrix} from "./asterisk.png"
+export {default as people} from "./people.jpg"
+export {default as record} from "./record.jpg"
