@@ -72,36 +72,24 @@ export default function Home() {
   }, [index]);
 
   return (
-    <main className="grid grid-cols-12 p-5 gap-4 bg-stone-900">
-      <div className="absolute px-10 inset-0 z-0">
-        <div className="text-9xl font-extrabold max-w-40 mt-36 text-stone-500">
-          ASTR
-        </div>
-        <div className="text-9xl font-extrabold mt-5 text-stone-500">IX</div>
+    <main className="grid grid-cols-12 sm:p-5 gap-4 overflow-x-hidden bg-stone-900">
+      <div className="absolute sm:text-9xl text-7xl font-extrabold text-stone-500 px-10 inset-0 z-0">
+        <div className="mt-36  ">ASTR</div>
+        <div className="mt-5">IX</div>
         {activeButton === 1 ? (
           <>
-            <div className="text-9xl font-extrabold mt-5 text-stone-500">
-              EVE
-            </div>
-            <div className="text-9xl font-extrabold mt-5 text-stone-500">
-              NTS
-            </div>
+            <div className="mt-5">EVE</div>
+            <div className="mt-5">NTS</div>
           </>
         ) : (
           <>
-            <div className="text-9xl font-extrabold mt-5 text-stone-500">
-              COLL
-            </div>
-            <div className="text-9xl font-extrabold mt-5 text-stone-500">
-              ECTI
-            </div>
-            <div className="text-9xl font-extrabold mt-5 text-stone-500">
-              BLES
-            </div>
+            <div className="mt-5 ">COLL</div>
+            <div className="mt-5">ECTI</div>
+            <div className="mt-5 ">BLES</div>
           </>
         )}
       </div>
-      <div className="col-span-8 overflow-hidden">
+      <div className="sm:col-span-8 col-span-full overflow-hidden">
         <div className="my-6">
           <div className="text-5xl flex gap-4 font-bold text-amber-300 m-2">
             <Image
@@ -129,8 +117,7 @@ export default function Home() {
             </div>
           ))}
         </div>
-
-        <div className="w-72 justify-between flex mx-6 mt-14  relative rounded-l-full rounded-r-full bg-stone-600">
+        <div className="w-72 justify-between flex mx-6 mt-14 relative rounded-l-full rounded-r-full bg-stone-600">
           <div
             className={` max-w-lg py-7 absolute px-16 rounded-l-full opacity-40 rounded-r-full  bg-stone-900  ${
               activeButton === 1
@@ -152,22 +139,22 @@ export default function Home() {
           </button>
         </div>
       </div>
-      <div className="col-span-4 px-10">
-        <div className="text-3xl font-bold mt-4 max-w-72 text-white ">
+      <div className="sm:col-span-4 col-span-full px-10">
+        <div className="md:text-3xl text:xl font-bold mt-4 md:max-w-72 text-white ">
           {activeButton === 1 ? (
             <h1>Explore Your first Event</h1>
           ) : (
             <h1>Explore Your first Collectible</h1>
           )}
         </div>
-        <div className="text-6xl font-bold  text-white mt-12">
+        <div className="lg:text-6xl md:text-4xl text-6xl font-bold  text-white mt-12">
           {activeButton === 1 ? (
             <h1>Event Name</h1>
           ) : (
-            <h1 className="max-w-10">Meta Live</h1>
+            <h1 className="md:max-w-10">Meta Live</h1>
           )}
         </div>
-        <div className=" flex gap-6 mt-4 text-white">
+        <div className=" flex flex-wrap gap-6 mt-4 text-white">
           {activeButton === 1 ? (
             <>
               <div className="flex gap-2">
@@ -238,7 +225,7 @@ export default function Home() {
                     className="rounded-full -ml-3"
                   />
                 </div>
-                <div className="font-bold text-xl mt-1.5">
+                <div className="font-bold sm:text-xl text:sm mt-1.5">
                   {" "}
                   22k people interested
                 </div>
@@ -306,7 +293,7 @@ export default function Home() {
             )}
           </div>
           <div
-            className={`flex ${
+            className={`flex flex-wrap ${
               activeButton === 1 ? "mt-20" : "flex-row-reverse"
             } justify-between `}
           >
@@ -322,19 +309,17 @@ export default function Home() {
               </div>
             )}
             <div className="mt-16">
-              <button className="rounded-l-full text-xl rounded-r-full px-8 py-4 font-semibold bg-amber-400 text-black">
+              <button className="rounded-l-full lg:text-xl rounded-r-full px-8 py-4 font-semibold bg-amber-400 text-black">
                 Join Waitlist
               </button>
             </div>
           </div>
         </div>
       </div>
-      <div className="absolute mt-28 flex w-screen z-100 rotate-90 ml-44 bg-purple-300">
-        <div className="py-8 animate-marquee ">
-          <div className="text-4xl mx-4">
-            JLN Stadium ,Delhi{" "}
-            <span className="text-4xl item-center py-2"> @ </span>Collection
-            Live, Meta Live Performance
+      <div className="absolute sm:mt-28 sm:flex w-screen z-100  sm:rotate-90 md:ml-28 lg:ml-44 bg-purple-300">
+        <div className="sm:py-6 animate-marquee ">
+          <div className="lg:text-4xl md:text-base text-xs font-bold lg:mx-4 md:mx-2">
+            JLN Stadium,Delhi @ Collection Live,Meta Live Performance
           </div>
         </div>
       </div>
