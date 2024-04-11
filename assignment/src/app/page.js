@@ -7,9 +7,18 @@ import Image from "next/image";
 import {
   astrix,
   drum,
+  fireworks,
   music,
   musician,
   people,
+  picture1,
+  picture2,
+  picture3,
+  picture4,
+  picture5,
+  picture6,
+  picture7,
+  picture9,
   qrcode,
   record,
 } from "./assets/images";
@@ -17,23 +26,23 @@ import {
 const MyCollection = [
   {
     label: "First Picture",
-    imgPath: drum,
+    imgPath: fireworks,
   },
   {
     label: "Second Picture",
-    imgPath: drum,
+    imgPath: picture1,
   },
   {
     label: "Third Picture",
-    imgPath: drum,
+    imgPath: picture2,
   },
   {
     label: "Third Picture",
-    imgPath: drum,
+    imgPath: picture3,
   },
   {
     label: "Third Picture",
-    imgPath: music,
+    imgPath: picture4,
   },
 ];
 
@@ -105,7 +114,7 @@ export default function Home() {
           </div>
         </div>
         <div
-          className="whitespace-nowrap transition-transform duration-500 ease-in-out m-2 max-w-lg mt-24 "
+          className="whitespace-nowrap transition-transform duration-500 ease-in-out m-2 max-w-lg mt-28 "
           style={{ transform: `translate3d(${-index * 50}%, 0, 0)` }}
         >
           {MyCollection.map((item, index) => (
@@ -241,7 +250,7 @@ export default function Home() {
               <>
                 <div className="mt-3">
                   <Image
-                    src={musician}
+                    src={picture6}
                     alt="guitar"
                     width={120}
                     height={150}
@@ -259,7 +268,7 @@ export default function Home() {
                 </div>
                 <div className="mt-3">
                   <Image
-                    src={musician}
+                    src={picture5}
                     alt="guitar"
                     width={130}
                     height={150}
@@ -270,9 +279,9 @@ export default function Home() {
             ) : (
               <div>
                 <div className="text-white font-bold">Collectibles</div>
-                <div className="mt-5 flex gap-4 w-full no-x-scrollbar min-w-72 overflow-auto no-scrollbar">
+                <div className="mt-5 flex gap-4 w-full min-w-72 overflow-x-auto no-scrollbar cursor-pointer">
                   <Image
-                    src={record}
+                    src={picture7}
                     alt="guitar"
                     width={160}
                     height={300}
@@ -286,7 +295,7 @@ export default function Home() {
                     className="rounded-md"
                   />
                   <Image
-                    src={record}
+                    src={picture9}
                     alt="guitar"
                     width={160}
                     height={300}
